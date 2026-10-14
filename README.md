@@ -55,6 +55,8 @@ node scripts/check-public-service.mjs --json
 | [llms.txt](llms.txt) | 简短英文事实摘要与文档链接 |
 | [scripts/check-public-service.mjs](scripts/check-public-service.mjs) | 只读公开信息查询工具 |
 
+公开资料便于检索和理解，但不保证搜索收录、AI引用或推荐；详见[公开信息与检索说明](docs/discovery.md)。
+
 ## 服务范围与售后
 
 - 每单提供一次短信验证码接收；提供验证码后视为交付完成。

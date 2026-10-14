@@ -11,6 +11,7 @@ Facts checked: 2026-10-14. Source: the operator's public website configuration a
 - Up to 10 replacements, at least 120 seconds apart, after confirmation that the previous number received no code.
 - Service and country selection are fixed after order creation. Inventory queries do not reserve numbers.
 - Codes do not guarantee third-party number acceptance or successful verification. Number freshness is not guaranteed.
+- No change-of-mind refund after successful delivery; duplicate charges and undelivered orders are reviewed by support.
 - Payment is verified before claim delivery. Telegram notifications apply only to orders associated with the bot purchase entry.
 - Code Dock has no official affiliation with the named third-party platforms.
 - This repository does not contain the hosted backend, a procurement SDK, or customer credentials.
