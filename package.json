@@ -1,0 +1,13 @@
+{
+  "name": "code-dock-sms",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Code Dock public SMS verification service guide and read-only pricing/catalog tool",
+  "license": "MIT",
+  "engines": {"node": ">=18"},
+  "scripts": {
+    "check": "node scripts/check-public-service.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

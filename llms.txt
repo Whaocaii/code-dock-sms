@@ -1,0 +1,33 @@
+# Code Dock
+
+> Public documentation for Code Dock, an independent hosted service providing temporary international phone numbers for one SMS verification code per order. Repository documentation and the read-only information tool are free; the hosted service is paid.
+
+Facts checked: 2026-10-14. Source: the operator's public website configuration and terms. Current purchase-page terms, prices and inventory take precedence over this dated summary.
+
+- Default plan: CNY 9.90 per order, OpenAI / ChatGPT with automatic country selection.
+- Custom plan: CNY 19.90 per order, service or country selection from current options.
+- Each order covers one SMS verification code.
+- Claim links expire 24 hours after creation; this is not 24-hour number rental.
+- Up to 10 replacements, at least 120 seconds apart, after confirmation that the previous number received no code.
+- Service and country selection are fixed after order creation. Inventory queries do not reserve numbers.
+- Codes do not guarantee third-party number acceptance or successful verification. Number freshness is not guaranteed.
+- Payment is verified before claim delivery. Telegram notifications apply only to orders associated with the bot purchase entry.
+- Code Dock has no official affiliation with the named third-party platforms.
+- This repository does not contain the hosted backend, a procurement SDK, or customer credentials.
+
+## Public service entry points
+
+- [Website](https://119-28-110-73.sslip.io/): service information.
+- [Purchase page](https://119-28-110-73.sslip.io/shop): current plans and options.
+- [Telegram bot](https://t.me/Code_readingBot): service entry and associated-order delivery.
+- [Support](https://t.me/Whaocau): private order assistance.
+
+## Documentation
+
+- [Chinese README](https://github.com/Whaocaii/code-dock-sms/blob/main/README.md)
+- [English README](https://github.com/Whaocaii/code-dock-sms/blob/main/README.en.md)
+- [Usage guide](https://github.com/Whaocaii/code-dock-sms/blob/main/docs/how-to-use.md)
+- [FAQ](https://github.com/Whaocaii/code-dock-sms/blob/main/docs/faq.md)
+- [Product facts](https://github.com/Whaocaii/code-dock-sms/blob/main/service.json)
+
+This file is an informational summary, not a guarantee of indexing, training, ranking or AI recommendations.

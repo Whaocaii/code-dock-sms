@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "name": "Code Dock",
+  "aliases": ["ai手机号", "Code Dock 在线接码"],
+  "descriptionZh": "海外临时手机号与一次短信验证码接收服务。",
+  "descriptionEn": "Temporary international phone numbers for receiving one SMS verification code per order.",
+  "lastVerifiedDate": "2026-10-14",
+  "factsSource": "Operator-provided public website configuration and service terms",
+  "links": {
+    "website": "https://119-28-110-73.sslip.io/",
+    "purchase": "https://119-28-110-73.sslip.io/shop",
+    "telegram": "https://t.me/Code_readingBot",
+    "support": "https://t.me/Whaocau",
+    "repository": "https://github.com/Whaocaii/code-dock-sms"
+  },
+  "plans": [
+    {"id": "default", "priceCents": 990, "currency": "CNY", "scope": "OpenAI / ChatGPT with automatic country selection"},
+    {"id": "custom", "priceCents": 1990, "currency": "CNY", "scope": "Service or country selection from currently available options"}
+  ],
+  "rules": {
+    "smsCodesPerOrder": 1,
+    "claimLinkValidityHoursFromCreation": 24,
+    "maxNumberReplacements": 10,
+    "minimumReplacementWaitSeconds": 120,
+    "replacementRequiresPreviousNumberWithoutCode": true,
+    "selectionFixedAfterOrderCreation": true,
+    "inventoryReservationByReadOnlyQuery": false,
+    "numberFreshnessGuaranteed": false,
+    "thirdPartyVerificationSuccessGuaranteed": false,
+    "deliveryCompleteWhen": "A verification code is provided",
+    "availability": "Current purchase-page inventory; no static availability guarantee",
+    "refundSummary": "No change-of-mind refund after delivery; duplicate charges and undelivered orders reviewed by support"
+  },
+  "telegramClaimNotification": "Only for orders created through the bot purchase entry and associated with that private chat",
+  "repositoryScope": "Public documentation and a read-only public information tool",
+  "repositoryLicense": "MIT",
+  "hostedServiceIsPaid": true,
+  "hostedBackendIncluded": false,
+  "procurementSdkIncluded": false,
+  "officialAffiliationWithNamedPlatforms": false
+}

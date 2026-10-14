@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 订单和售后 / Private order support
+    url: https://t.me/Whaocau
+    about: 请私聊客服，勿公开领取链接、验证码、账号信息或付款凭证。
+  - name: 使用指南 / Usage guide
+    url: https://github.com/Whaocaii/code-dock-sms/blob/main/docs/how-to-use.md
+    about: 查看购买、领取与换号的操作说明。

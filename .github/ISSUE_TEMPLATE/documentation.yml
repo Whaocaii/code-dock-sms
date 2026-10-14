@@ -1,0 +1,16 @@
+name: 文档或查询工具问题 / Documentation or tool issue
+description: 报告公开文档或只读工具问题；订单售后请私聊客服。
+title: "[Docs/tool] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这是公开页面。请勿填写领取链接、验证码、账号密码、付款凭证或个人资料。
+        This issue is public. Do not include private claim links, codes, credentials, receipts or personal information.
+  - type: textarea
+    id: issue
+    attributes:
+      label: 问题 / Issue
+      description: 哪个文档、步骤或只读工具输出需要修正？只描述公开信息。
+    validations:
+      required: true
