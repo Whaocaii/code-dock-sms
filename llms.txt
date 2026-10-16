@@ -7,7 +7,7 @@ Facts checked: 2026-10-14. Source: the operator's public website configuration a
 - Default plan: CNY 9.90 per order, OpenAI / ChatGPT with automatic country selection.
 - Custom plan: CNY 19.90 per order, service or country selection from current options.
 - Each order covers one SMS verification code.
-- Claim links expire 24 hours after creation; this is not 24-hour number rental.
+- Claim links expire 7 days after creation; this is not 7-day number rental.
 - Up to 10 replacements, at least 120 seconds apart, after confirmation that the previous number received no code.
 - Service and country selection are fixed after order creation. Inventory queries do not reserve numbers.
 - Codes do not guarantee third-party number acceptance or successful verification. Number freshness is not guaranteed.

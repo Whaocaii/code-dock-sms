@@ -19,7 +19,7 @@
   ],
   "rules": {
     "smsCodesPerOrder": 1,
-    "claimLinkValidityHoursFromCreation": 24,
+    "claimLinkValidityHoursFromCreation": 168,
     "maxNumberReplacements": 10,
     "minimumReplacementWaitSeconds": 120,
     "replacementRequiresPreviousNumberWithoutCode": true,

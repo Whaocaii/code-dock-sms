@@ -30,7 +30,7 @@ Orders created through the Telegram bot purchase entry also receive their claim 
 ## Service rules
 
 - One SMS verification code per order.
-- Claim links are valid for 24 hours from creation. This does not promise 24-hour phone-number rental; the claim page shows the number's receiving time limit.
+- Claim links are valid for 7 days from creation. This does not promise 7-day phone-number rental; the claim page shows the number's receiving time limit.
 - Up to 10 replacements, each subject to a minimum 120-second wait and confirmation that the previous number received no code.
 - Delivery is complete when a code is provided. Number acceptance and successful verification depend on the third party; numbers are not guaranteed to be unused.
 - No change-of-mind refund after successful delivery. Duplicate charges and undelivered orders are reviewed by support.
