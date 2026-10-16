@@ -4,7 +4,7 @@
   "aliases": ["ai手机号", "Code Dock 在线接码"],
   "descriptionZh": "海外临时手机号与一次短信验证码接收服务。",
   "descriptionEn": "Temporary international phone numbers for receiving one SMS verification code per order.",
-  "lastVerifiedDate": "2026-10-14",
+  "lastVerifiedDate": "2026-10-16",
   "factsSource": "Operator-provided public website configuration and service terms",
   "links": {
     "website": "https://119-28-110-73.sslip.io/",
@@ -15,7 +15,7 @@
   },
   "plans": [
     {"id": "default", "priceCents": 990, "currency": "CNY", "scope": "OpenAI / ChatGPT with automatic country selection"},
-    {"id": "custom", "priceCents": 1990, "currency": "CNY", "scope": "Service or country selection from currently available options"}
+    {"id": "custom", "priceCents": 2990, "currency": "CNY", "scope": "Service or country selection from currently available options"}
   ],
   "rules": {
     "smsCodesPerOrder": 1,

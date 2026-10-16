@@ -2,10 +2,10 @@
 
 > Public documentation for Code Dock, an independent hosted service providing temporary international phone numbers for one SMS verification code per order. Repository documentation and the read-only information tool are free; the hosted service is paid.
 
-Facts checked: 2026-10-14. Source: the operator's public website configuration and terms. Current purchase-page terms, prices and inventory take precedence over this dated summary.
+Facts checked: 2026-10-16. Source: the operator's public website configuration and terms. Current purchase-page terms, prices and inventory take precedence over this dated summary.
 
 - Default plan: CNY 9.90 per order, OpenAI / ChatGPT with automatic country selection.
-- Custom plan: CNY 19.90 per order, service or country selection from current options.
+- Custom plan: CNY 29.90 per order, service or country selection from current options.
 - Each order covers one SMS verification code.
 - Claim links expire 7 days after creation; this is not 7-day number rental.
 - Up to 10 replacements, at least 120 seconds apart, after confirmation that the previous number received no code.

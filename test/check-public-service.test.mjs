@@ -2,12 +2,12 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { checkPublicService, formatPublicService, main, SOURCE_URLS } from '../scripts/check-public-service.mjs';
 
-const config = { ready: true, priceCents: 990, customEnabled: true, customPriceCents: 1990 };
-const catalog = { enabled: true, available: true, customPriceCents: 1990,
+const config = { ready: true, priceCents: 990, customEnabled: true, customPriceCents: 2990 };
+const catalog = { enabled: true, available: true, customPriceCents: 2990,
   services: [{ id: 'openai-chatgpt', title: 'OpenAI / ChatGPT', countries: ['greece', 'malaysia'] },
     { id: 'discord', title: 'Discord', countries: ['malaysia'] }],
   countries: [{ id: 'greece', label: '希腊' }, { id: 'malaysia', label: '马来西亚' }] };
-const fixedTime = '2026-10-14T08:00:00.000Z';
+const fixedTime = '2026-10-16T08:00:00.000Z';
 const json = (value, status = 200) => new Response(JSON.stringify(value), { status, headers: { 'Content-Type': 'application/json; charset=utf-8' } });
 const fixtures = (url) => Promise.resolve(json(url === SOURCE_URLS.config ? config : catalog));
 const run = fetchImpl => checkPublicService({ fetchImpl, now: () => fixedTime });
@@ -26,7 +26,7 @@ test('uses only the two fixed public GET URLs, no credentials, body, or purchase
     assert.ok(options.signal instanceof AbortSignal);
   }
   assert.equal(report.observedAt, fixedTime);
-  assert.deepEqual(report.prices, { currency: 'CNY', defaultCents: 990, customCents: 1990 });
+  assert.deepEqual(report.prices, { currency: 'CNY', defaultCents: 990, customCents: 2990 });
   assert.deepEqual(report.availability, { defaultPurchasable: true, customPurchasable: true, catalogAvailable: true });
   assert.deepEqual(report.services[1], { id: 'discord', title: 'Discord', countryIds: ['malaysia'] });
 });
@@ -43,14 +43,14 @@ test('emits only whitelisted public fields, never raw order, token, or cost data
 test('Chinese display formats integer cents as two decimals and prints current service countries', async () => {
   const text = formatPublicService(await run(fixtures));
   assert.match(text, /默认方案：当前可购买 · ¥9\.90 \/ 单/);
-  assert.match(text, /自选方案：当前可购买 · ¥19\.90 \/ 单/);
+  assert.match(text, /自选方案：当前可购买 · ¥29\.90 \/ 单/);
   assert.match(text, /Discord：马来西亚/); assert.match(text, /OpenAI \/ ChatGPT：希腊、马来西亚/);
 });
 
 test('catalog network failure preserves observed default price without inventing custom stock', async () => {
   const report = await run(url => url === SOURCE_URLS.config ? Promise.resolve(json(config)) : Promise.reject(new Error('secret-token-in-error')));
   assert.equal(report.availability.defaultPurchasable, true); assert.equal(report.availability.customPurchasable, false);
-  assert.equal(report.prices.customCents, 1990); assert.deepEqual(report.services, []); assert.deepEqual(report.countries, []);
+  assert.equal(report.prices.customCents, 2990); assert.deepEqual(report.services, []); assert.deepEqual(report.countries, []);
   assert.equal(report.issues[0].code, 'NETWORK_ERROR'); assert.ok(!JSON.stringify(report).includes('secret-token'));
   assert.match(formatPublicService(report), /没有已确认可售/);
 });

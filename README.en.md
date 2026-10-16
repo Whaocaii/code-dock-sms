@@ -2,7 +2,7 @@
 
 [简体中文](README.md) · [Usage guide](docs/how-to-use.md) · [FAQ](docs/faq.md)
 
-Code Dock provides temporary international phone numbers for receiving **one SMS verification code per order**. The default OpenAI / ChatGPT plan is **CNY 9.90**; country or service selection is **CNY 19.90**.
+Code Dock provides temporary international phone numbers for receiving **one SMS verification code per order**. The default OpenAI / ChatGPT plan is **CNY 9.90**; country or service selection is **CNY 29.90**.
 
 This repository provides public service documentation, machine-readable product facts, and a free tool for reading current public prices and service options.
 
@@ -13,9 +13,9 @@ This repository provides public service documentation, machine-readable product 
 | Plan | Price | Scope |
 | --- | ---: | --- |
 | Default | CNY 9.90 / order | OpenAI / ChatGPT, with automatic country selection |
-| Custom selection | CNY 19.90 / order | Choose a currently available service and country, or automatic country selection |
+| Custom selection | CNY 29.90 / order | Choose a currently available service and country, or automatic country selection |
 
-Prices and terms were checked on **2026-10-14**. The purchase page determines current options and availability. The custom plan remains CNY 19.90 when OpenAI / ChatGPT and automatic country selection are chosen. The service, country choice and amount are fixed after order creation.
+Prices and terms were checked on **2026-10-16**. The purchase page determines current options and availability. The custom plan remains CNY 29.90 when OpenAI / ChatGPT and automatic country selection are chosen. The service, country choice and amount are fixed after order creation.
 
 ## How it works
 
